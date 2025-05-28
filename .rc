@@ -1,0 +1,4 @@
+#
+echo "entering $(realpath "${BASH_SOURCE[0]}")"
+
+source ~/.config/dotfiles-core/.commands

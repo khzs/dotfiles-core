@@ -1,0 +1,67 @@
+#
+echo "entering $(realpath "${BASH_SOURCE[0]}")"
+
+
+
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+alias ..='cd .. ; ll'
+
+alias bat='batcat'
+
+mkcd()    {               mkdir "$@" && cd "$@"                                                                               ; }
+
+dbt()     { set -x ;      docker build -t $(pwd | xargs basename) .                                 ; { set +x; } 2>/dev/null ; }
+
+
+
+
+alias l0='ll ../00*'
+
+gcl()     { set -x ;      git clone "$@"
+                          cd "$(basename $@ .git)"                                                  ; { set +x; } 2>/dev/null ; }
+
+gc()      { set -x ;      git checkout "$1"                                                         ; { set +x; } 2>/dev/null ; }
+
+gcb()     { set -x ;      git checkout -b "${1:-$(basename $(realpath ../))}"                       ; { set +x; } 2>/dev/null ; }
+
+gpl()     { set -x ;      git pull                                                                  ; { set +x; } 2>/dev/null ; }
+
+gst()     { set -x ;      git status "$@"                                                           ; { set +x; } 2>/dev/null ; }
+
+gd()      { set -x ;      git diff "$@"                                                             ; { set +x; } 2>/dev/null ; }
+
+gsh()     { set -x ;      git stash "$@"                                                            ; { set +x; } 2>/dev/null ; }
+
+gl()      { set -x ;      git log --graph --oneline "$@"                                            ; { set +x; } 2>/dev/null ; }
+
+
+
+ga()      { set -x ;      git add "$@"                                                              ; { set +x; } 2>/dev/null ; }
+
+gcm()     { set -x ;      git commit -m "$@"                                                        ; { set +x; } 2>/dev/null ; }
+
+gcma()    { set -x ;      git commit --amend --no-edit                                              ; { set +x; } 2>/dev/null ; }
+
+gcmae()   { set -x ;      git commit --amend                                                        ; { set +x; } 2>/dev/null ; }
+
+gpsh()    { set -x ;      git push                                                                  ; { set +x; } 2>/dev/null ; }
+
+gpfwl()   { set -x ;      git push --force-with-lease                                               ; { set +x; } 2>/dev/null ; }
+
+
+
+gfp()     { set -x ;      gsh
+                          ll ../000*
+                          git format-patch -"$@" -o ../
+                          git reset --hard HEAD~"$@"                                                ; { set +x; } 2>/dev/null ; }
+
+gap()     { set -x ;      git apply --3way "$@"
+                          git restore --staged .                                                    ; { set +x; } 2>/dev/null ; }
+
+gam()     { set -x ;      git am --3way "$@"                                                        ; { set +x; } 2>/dev/null ; }
+
+
+
+count()   { set -x ;      git rev-list --count HEAD ^$@                                             ; { set +x; } 2>/dev/null ; }
