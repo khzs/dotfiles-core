@@ -33,6 +33,8 @@ gsh()     { set -x ;      git stash "$@"                                        
 
 gl()      { set -x ;      git log --graph --oneline "$@"                                            ; { set +x; } 2>/dev/null ; }
 
+gbd()     { set -x ;      git branch -d "$@"                                                        ; { set +x; } 2>/dev/null ; }
+
 
 
 ga()      { set -x ;      git add "$@"                                                              ; { set +x; } 2>/dev/null ; }
