@@ -3,12 +3,7 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 
 
-alias ll='ls -alF'
-alias ls='ls --color=auto'
-
 alias ..='cd .. ; ll'
-
-alias bat='batcat'
 
 mkcd()    {               mkdir "$@" && cd "$@"                                                                               ; }
 

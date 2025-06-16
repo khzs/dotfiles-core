@@ -26,7 +26,7 @@ export PATH="$PATH:/Users/khzs/.local/bin"
 
 
 # common aliases and functions
-source ~/.config/dotfiles-core/.rc
+source ~/.config/dotfiles-core/.commands
 
 # this should be at the very very end of .zshrc
 eval "$(starship init zsh)"
