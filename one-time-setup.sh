@@ -2,14 +2,8 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 
-# bat
-mkdir -p ~/.config/bat
-ln -s ~/.config/dotfiles-core/bat/config ~/.config/bat/config
-
-# micro
-mkdir -p ~/.config/micro
-ln -s ~/.config/dotfiles-core/micro/bindings.json ~/.config/micro/bindings.json
-ln -s ~/.config/dotfiles-core/micro/settings.json ~/.config/micro/settings.json
+# symlink
+lndir ~/.config/dotfiles-core ~/.config
 
 # edit
 mkdir -p ~/.local/bin

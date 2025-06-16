@@ -4,9 +4,15 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 #
 sudoer()
 {
-  sudo apt install bat micro libicu-dev -y
-  # hstr
-  # sudo snap install yazi --classic
+  # libicu-dev    : for MS edit
+  # xutils-dev    : for lndir
+  sudo apt install -y bat micro \
+    libicu-dev \
+    xutils-dev
+
+  sudo snap install yazi --classic
+
+  # hstr ??
 }
 
 
