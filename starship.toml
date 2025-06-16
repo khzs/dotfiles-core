@@ -1,0 +1,18 @@
+format = """\n$directory$git_branch$git_status$character"""
+right_format = """$all"""
+add_newline = false
+
+[directory]
+style = 'bold bg:white black'
+truncation_length = 10
+truncate_to_repo = false
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[git_status]
+style = 'bold purple'
+
+[cmd_duration]
+disabled = true
+
