@@ -1,4 +1,6 @@
 [opener]
 edit = [
-	{ run = 'bat "$@"', block = true },
+	{ run = 'micro "$@"', block = true },
 ]
+[mgr]
+show_hidden = true
