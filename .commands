@@ -33,7 +33,9 @@ gsh()     { set -x ;      git stash "$@"                                        
 
 gl()      { set -x ;      git log --graph --oneline "$@"                                            ; { set +x; } 2>/dev/null ; }
 
-gbd()     { set -x ;      git branch -d "$@"                                                        ; { set +x; } 2>/dev/null ; }
+gbd()     { set -x ;      original_branch=$(git symbolic-ref --short HEAD)
+                          git checkout main 2>/dev/null || git checkout master
+                          git branch -d "$original_branch"                                          ; { set +x; } 2>/dev/null ; }
 
 
 
