@@ -1,4 +1,4 @@
-format = """\n$directory$git_branch$git_status$character"""
+format = """\n$directory$git_branch$git_status$battery$character"""
 right_format = """$all"""
 add_newline = false
 
@@ -9,10 +9,13 @@ truncate_to_repo = false
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
+style = 'bold blue'
 
 [git_status]
-style = 'bold purple'
+style = 'bold blue'
+
+[[battery.display]]
+style = 'bold white'
 
 [cmd_duration]
 disabled = true
-
