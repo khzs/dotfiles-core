@@ -1,5 +1,5 @@
 #
-echo "entering $(realpath "${BASH_SOURCE[0]}")"
+echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 
 
