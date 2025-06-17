@@ -4,23 +4,16 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 #
 sudoer()
 {
-  # libicu-dev    : for MS edit
   # xutils-dev    : for lndir
   sudo apt install -y bat micro l3afpad \
-    libicu-dev \
     xutils-dev
 
   sudo snap install yazi --classic
-
-  # hstr ??
 }
 
 
 hostile()
 {
-  # hstr
-  echo "https://github.com/dvorka/hstr/releases"
-
   # bat
 
   # micro
