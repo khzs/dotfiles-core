@@ -2,7 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-sudo apt install -y bat micro zsh zsh-autosuggestions \
+sudo apt install -y bat micro petname zsh zsh-autosuggestions \
   xutils-dev
 # xutils-dev    : for lndir
 sudo snap install yazi --classic
