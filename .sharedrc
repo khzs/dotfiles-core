@@ -21,7 +21,7 @@ gcl()     { set -x ;      git clone "$@"
 
 gc()      { set -x ;      git checkout "$1"                                                         ; { set +x; } 2>/dev/null ; }
 
-gcb()     { set -x ;      git checkout -b "${1:-$(basename $(realpath ../))}"                       ; { set +x; } 2>/dev/null ; }
+gcb()     { set -x ;      git checkout -b "${1:-$(petname)}-$(date +%s)"                            ; { set +x; } 2>/dev/null ; }
 
 gpl()     { set -x ;      git pull                                                                  ; { set +x; } 2>/dev/null ; }
 

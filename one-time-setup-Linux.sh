@@ -2,7 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-sudo apt install -y bat micro l3afpad zsh zsh-autosuggestions \
+sudo apt install -y bat micro l3afpad petname zsh zsh-autosuggestions \
   xutils-dev
 # xutils-dev    : for lndir
 
