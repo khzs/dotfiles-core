@@ -5,4 +5,4 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 alias bat='batcat'
 
 #
-source ~/.config/dotfiles-core/.commands
+source ~/.config/dotfiles-core/.sharedrc
