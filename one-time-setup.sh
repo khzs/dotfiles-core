@@ -6,4 +6,4 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin -y

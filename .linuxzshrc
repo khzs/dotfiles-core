@@ -11,7 +11,7 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '\t\t' autosuggest-accept
 
 #
-export PATH=$PATH:/snap/bin
+export PATH=~/.local/bin:/snap/bin:$PATH
 
 #
 source ~/.config/dotfiles-core/.sharedrc
