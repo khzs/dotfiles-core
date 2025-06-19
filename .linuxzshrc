@@ -17,5 +17,5 @@ export PATH=~/.local/bin:/snap/bin:$PATH
 source ~/.config/dotfiles-core/.sharedrc
 
 # this should be at the very very end of .zshrc
-eval "$(starship init bash)"
+eval "$(starship init bash)" 2>/dev/null
 eval "$(starship init zsh)"
