@@ -3,7 +3,7 @@ right_format = """$all"""
 add_newline = false
 
 [directory]
-style = 'bold bg:white black'
+style = 'bold bg:white #000000'
 truncation_length = 10
 truncate_to_repo = false
 
