@@ -19,3 +19,6 @@ style = 'bold white'
 
 [cmd_duration]
 disabled = true
+
+[aws]
+disabled = true
