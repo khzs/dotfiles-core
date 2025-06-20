@@ -17,7 +17,7 @@ alias l0='ll ../00*'
 gcl()     { set -x ;      git clone "$@"
                           cd "$(basename $@ .git)"                                                  ; { set +x; } 2>/dev/null ; }
 
-gc()      { set -x ;      git checkout "$1"                                                         ; { set +x; } 2>/dev/null ; }
+gc()      { set -x ;      git checkout "$@"                                                         ; { set +x; } 2>/dev/null ; }
 
 gcb()     { set -x ;      git checkout -b "${1:-$(petname)}-$(date +%s)"                            ; { set +x; } 2>/dev/null ; }
 
