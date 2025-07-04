@@ -5,6 +5,7 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
 alias bat='batcat'
+alias leafpad='l3afpad'
 
 #
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
