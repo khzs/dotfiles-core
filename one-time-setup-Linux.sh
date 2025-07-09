@@ -8,8 +8,8 @@ sudo apt install -y bat micro l3afpad petname zsh zsh-autosuggestions \
 sudo snap install yazi --classic
 
 #
-chsh -s $(which zsh)
 cp ~/.config/dotfiles-core/copy/.zshrc ~/
+chsh -s $(which zsh)
 
 #
 sed -i '/#umask 022/a\\necho "entering $(realpath "${BASH_SOURCE[0]}")"' ~/.profile
