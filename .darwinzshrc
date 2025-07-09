@@ -16,18 +16,15 @@ name()  {   cd ~/workspace/zname;   pipenv run python main.py;    cd -    }
 mkn()   {   mkcd $(name | head -1)                                        }
 gcbn()  {   gcb $(name)                                                   }
 
-
 #
 export HOMEBREW_NO_ENV_HINTS=1
-
-#
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '\t\t' autosuggest-accept
-
 
 # Created by `pipx` on 2023-03-09 14:50:54
 export PATH="$PATH:/Users/khzs/.local/bin"
 
+#
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '\t\t' autosuggest-accept
 
 #
 source ~/.config/dotfiles-core/.sharedrc
