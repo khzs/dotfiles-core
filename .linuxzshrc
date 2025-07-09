@@ -8,11 +8,11 @@ alias bat='batcat'
 alias leafpad='l3afpad'
 
 #
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '\t\t' autosuggest-accept
+export PATH=~/.local/bin:/snap/bin:$PATH
 
 #
-export PATH=~/.local/bin:/snap/bin:$PATH
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '\t\t' autosuggest-accept
 
 #
 source ~/.config/dotfiles-core/.sharedrc
