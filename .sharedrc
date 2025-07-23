@@ -59,7 +59,7 @@ gfp()     { set -x ;      gsh
 gap()     { set -x ;      git apply --3way "$@"
                           git restore --staged .                                                    ; { set +x; } 2>/dev/null ; }
 
-gam()     { set -x ;      git am --3way "$@"                                                        ; { set +x; } 2>/dev/null ; }
+gam()     { set -x ;      git am --3way --whitespace=fix "$@"                                       ; { set +x; } 2>/dev/null ; }
 
 
 
