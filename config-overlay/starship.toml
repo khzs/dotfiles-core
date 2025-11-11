@@ -1,11 +1,16 @@
-format = """\n$directory$git_branch$git_status$battery$character"""
-right_format = """$all"""
+format = "\n$directory$git_branch$git_status$python$golang$battery$character"
+right_format = "$all"
 add_newline = false
+
 
 [directory]
 style = 'bold bg:white #000000'
 truncation_length = 10
 truncate_to_repo = false
+
+[[battery.display]]
+style = 'bold white'
+
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
@@ -14,11 +19,22 @@ style = 'bold blue'
 [git_status]
 style = 'bold blue'
 
-[[battery.display]]
-style = 'bold white'
+
+[python]
+format = "${symbol}${version} "
+version_format = "${major}.${minor}"
+
+[golang]
+format = "${symbol}"
+
+
+
 
 [cmd_duration]
 disabled = true
 
 [aws]
+disabled = true
+
+[package]
 disabled = true
