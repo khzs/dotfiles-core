@@ -5,8 +5,9 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 alias ll='ls -alF'
 alias ls='ls --color=auto'  # --group-directories-first is unsupported on macOS
 
-minimize()  {   osascript -e 'tell application "System Events" to keystroke "h" using command down'   }
+minimize()  {             osascript -e 'tell application "System Events" to keystroke "h" using command down'                             }
 
+p()         { set -x ;    pycharm "${1:-$(pwd)}"                                                              ; { set +x; } 2>/dev/null ; }
 
 #
 export HOMEBREW_NO_ENV_HINTS=1
