@@ -14,3 +14,5 @@ curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin -y
 
 #
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+brew install bat
