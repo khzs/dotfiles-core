@@ -2,7 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-sudo apt install -y bat micro l3afpad petname zsh zsh-autosuggestions xutils-dev build-essential
+sudo apt install -y micro l3afpad petname zsh zsh-autosuggestions xutils-dev build-essential
 # xutils-dev        : for lndir
 # build-essential   : for brew
 sudo snap install yazi --classic
