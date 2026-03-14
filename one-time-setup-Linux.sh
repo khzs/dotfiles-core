@@ -7,8 +7,7 @@ sed -i '/# for examples/a\\necho "entering $(realpath "${BASH_SOURCE[0]}")"' ~/.
 echo "\nsource ~/.config/dotfiles-core/.linuxbashrc" >> ~/.bashrc
 
 #
-sudo apt install -y zsh zsh-autosuggestions xutils-dev
-# xutils-dev        : for lndir
+sudo apt install -y zsh-autosuggestions xutils-dev                 # xutils-dev : for lndir
 
 #
 cp ~/.config/dotfiles-core/copy/.zshrc ~/
