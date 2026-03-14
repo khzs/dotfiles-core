@@ -3,7 +3,7 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
 brew install --cask font-fira-code-nerd-font       # ez asszem a kittyhez kell, vagy a yazihoz
-brew install starship zsh-autosuggestions
+brew install zsh-autosuggestions
 
 #
 # echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}" -> .zshrc eleje
