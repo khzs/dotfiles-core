@@ -16,4 +16,8 @@ sed -i '/# for examples/a\\necho "entering $(realpath "${BASH_SOURCE[0]}")"' ~/.
 echo "\nsource ~/.config/dotfiles-core/.linuxbashrc" >> ~/.bashrc
 
 #
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+
+#
 source ~/.config/dotfiles-core/one-time-setup.sh
