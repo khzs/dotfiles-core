@@ -7,7 +7,7 @@ alias ls='ls --color=auto --group-directories-first'
 alias leafpad='l3afpad'
 
 #
-export PATH=~/.local/bin:/snap/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 #
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
