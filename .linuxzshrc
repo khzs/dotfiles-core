@@ -6,7 +6,7 @@ alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
 
 #
-export PATH=~/.local/bin:/snap/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 #
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh

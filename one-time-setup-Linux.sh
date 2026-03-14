@@ -5,7 +5,6 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 sudo apt install -y petname zsh zsh-autosuggestions xutils-dev build-essential
 # xutils-dev        : for lndir
 # build-essential   : for brew
-sudo snap install yazi --classic
 
 #
 cp ~/.config/dotfiles-core/copy/.zshrc ~/
