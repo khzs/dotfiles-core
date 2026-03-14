@@ -10,5 +10,5 @@ git config --global push.autoSetupRemote true
 lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
-brew install --cask font-fira-code-nerd-font       # yazihoz es starshiphez biztosan kell, asszem kittyhez is
+brew install --cask font-jetbrains-mono-nerd-font      # yazihoz es starshiphez biztosan kell, asszem kittyhez is; MonoNL = No Ligatures; MonoNL ... Mono = smaller icons in yazi
 brew install bat micro yazi starship
