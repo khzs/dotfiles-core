@@ -10,4 +10,5 @@ git config --global push.autoSetupRemote true
 lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
+brew install --cask font-fira-code-nerd-font       # yazihoz es starshiphez biztosan kell, asszem kittyhez is
 brew install bat micro yazi starship

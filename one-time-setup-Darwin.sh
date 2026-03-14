@@ -2,7 +2,6 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-brew install --cask font-fira-code-nerd-font       # ez asszem a kittyhez kell, vagy a yazihoz
 brew install zsh-autosuggestions
 
 #
