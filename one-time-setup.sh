@@ -10,7 +10,7 @@ git config --global push.autoSetupRemote true
 lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
-curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin -y
+brew install bat micro yazi
 
 #
-brew install bat micro yazi
+curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin -y
