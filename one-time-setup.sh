@@ -11,4 +11,4 @@ lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
 uname -r | grep WSL   || brew install --cask font-jetbrains-mono-nerd-font      # yazihoz es starshiphez biztosan kell, asszem kittyhez is; MonoNL = No Ligatures; MonoNL ... Mono = smaller icons in yazi
-brew install bat micro yazi starship
+brew install bat micro yazi starship midnight-commander fresh-editor lazygit
