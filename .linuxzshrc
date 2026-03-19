@@ -6,9 +6,6 @@ alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
 
 #
-export PATH=~/.local/bin:$PATH
-
-#
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '\t\t' autosuggest-accept
