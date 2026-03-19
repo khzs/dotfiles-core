@@ -37,5 +37,8 @@ disabled = true
 [aws]
 disabled = true
 
+[jobs]
+disabled = true
+
 [package]
 disabled = true
