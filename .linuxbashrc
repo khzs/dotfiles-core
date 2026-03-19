@@ -6,4 +6,7 @@ alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
 
 #
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+#
 source ~/.config/dotfiles-core/.sharedrc
