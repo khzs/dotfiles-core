@@ -1,8 +1,12 @@
 #
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
+#
+export PATH=~/.local/bin:$PATH
+export HOMEBREW_NO_ENV_HINTS=1
 
 
+#
 alias ..='cd .. ; ll'
 
 mkcd()    {               mkdir "$@" && cd "$@"                                                                               ; }
@@ -11,7 +15,7 @@ dbt()     { set -x ;      docker build -t $(pwd | xargs basename) .             
 
 
 
-
+#
 alias l0='ll ../00*'
 
 gcl()     { set -x ;      git clone "$@"
