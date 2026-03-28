@@ -55,6 +55,12 @@ gpfwl()   { set -x ;      git push --force-with-lease                           
 
 
 
+gr()      { set -x ;      git rebase "$@"                                                           ; { set +x; } 2>/dev/null ; }
+
+grc()     { set -x ;      git rebase --continue                                                     ; { set +x; } 2>/dev/null ; }
+
+
+
 gfp()     { set -x ;      gsh
                           ll ../000*
                           git format-patch -"$@" -o ../
