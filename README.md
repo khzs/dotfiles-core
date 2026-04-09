@@ -3,9 +3,9 @@
 ## Manual steps
 
 For Win11 Terminal:
-* Download and install https://github.com/ryanoasis/nerd-fonts/releases/download/latest/JetBrainsMono.zip
-    - MonoNL = No Ligatures
-    - MonoNL ... Mono = smaller icons in yazi
+* Download and install https://github.com/ryanoasis/nerd-fonts/releases/latest/download/AdwaitaMono.zip
+    - Mono = basic
+    - Mono ... Mono = smaller icons in yazi
 * Change tab keybindings
 * Consider exporting `settings.json`
 
