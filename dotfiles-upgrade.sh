@@ -26,6 +26,7 @@ paths=(
   ~/.gitignore_global
   ~/.config/fresh/config.json
   ~/.config/ghostty/config.ghostty
+  ~/.config/zed/settings.json
 )
 
 git status
