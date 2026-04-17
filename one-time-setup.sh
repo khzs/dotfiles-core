@@ -12,6 +12,7 @@ lndir ~/.config/dotfiles-core/config-overlay ~/.config
 [ ! -f ~/.gitignore_global ] && cp ~/.config/dotfiles-core/copy/.gitignore_global.base ~/.gitignore_global
 [ ! -f ~/.config/fresh/config.json ] && mkdir -p ~/.config/fresh && cp ~/.config/dotfiles-core/copy/fresh.base ~/.config/fresh/config.json
 [ ! -f ~/.config/ghostty/config.ghostty ] && mkdir -p ~/.config/ghostty && cp ~/.config/dotfiles-core/copy/ghostty.base ~/.config/ghostty/config.ghostty
+[ ! -f ~/.config/zed/settings.json ] && mkdir -p ~/.config/zed && cp ~/.config/dotfiles-core/copy/zed.base ~/.config/zed/settings.json
 
 #
 brew install --cask font-adwaita-mono-nerd-font      # Mono = basic; Mono ... Mono = smaller icons in yazi

@@ -8,6 +8,7 @@ alias ls='ls --color=auto'  # --group-directories-first is unsupported on macOS
 minimize()  {             osascript -e 'tell application "System Events" to keystroke "h" using command down'                             }
 
 p()         { set -x ;    pycharm "${1:-$(pwd)}"                                                              ; { set +x; } 2>/dev/null ; }
+zed()       { set -x ;    /Applications/Zed.app/Contents/MacOS/zed "${1:-$(pwd)}" 1>/dev/null &               ; { set +x; } 2>/dev/null ; }
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '\t\t' autosuggest-accept

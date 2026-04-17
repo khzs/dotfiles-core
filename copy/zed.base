@@ -1,0 +1,41 @@
+{
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "base_keymap": "JetBrains",
+  "tab_size": 2,
+  "ui_font_size": 16.0,
+  "buffer_font_size": 15.0,
+  "agent_ui_font_size": 16.0,
+  "agent_buffer_font_size": 15.0,
+  "terminal": {
+    "font_size": 15.0,
+  },
+  "buffer_line_height": {
+    "custom": 1.9,
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false
+  },
+  "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "default": "allow"
+        }
+      }
+    },
+    "dock": "right",
+    "default_profile": "write",
+  },
+}
