@@ -18,4 +18,8 @@ chsh -s $(which zsh)
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 
 #
+sudo apt install rsync -y
+curl -f https://zed.dev/install.sh | sh
+
+#
 source ~/.config/dotfiles-core/one-time-setup.sh
