@@ -38,6 +38,12 @@ if ! command -v bcompare > /dev/null; then
 fi
 
 #
+if ! command -v zed > /dev/null; then
+  sudo apt install rsync libasound2t64 -y
+  curl -f https://zed.dev/install.sh | sh
+fi
+
+#
 command -v brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 
