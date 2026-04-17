@@ -15,6 +15,10 @@ cp ~/.config/dotfiles-core/copy/.zshrc ~/
 sudo usermod --shell $(which zsh) "$USER"
 
 #
+sudo apt install rsync libasound2t64 -y
+command -v zed > /dev/null || curl -f https://zed.dev/install.sh | sh
+
+#
 command -v brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 
