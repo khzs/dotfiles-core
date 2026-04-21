@@ -7,6 +7,9 @@ sed -i '/# for examples/a\\necho "entering $(realpath "${BASH_SOURCE[0]}")"' ~/.
 echo -e "\nsource ~/.config/dotfiles-core/.linuxbashrc" >> ~/.bashrc
 
 #
+sudo apt install -y fzf zoxide
+
+#
 sudo apt install -y zsh-autosuggestions
 cp ~/.config/dotfiles-core/copy/.zshrc ~/
 sudo usermod --shell $(which zsh) "$USER"

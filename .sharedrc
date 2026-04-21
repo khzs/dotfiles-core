@@ -4,6 +4,8 @@ echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 #
 export PATH=/usr/bin:/usr/sbin:$PATH:~/.local/bin
 export HOMEBREW_NO_ENV_HINTS=1
+eval "$(zoxide init zsh --cmd cd)"
+source <(fzf --zsh)
 
 
 #
@@ -18,8 +20,8 @@ dbt()     { set -x ;      docker build -t $(pwd | xargs basename) .             
 #
 alias l0='ll ../00*'
 
-gcl()     { set -x ;      git clone "$@"
-                          cd "$(basename $@ .git)"                                                  ; { set +x; } 2>/dev/null ; }
+gcl()     { set -x ;      git clone "$@"                                                            ; { set +x; } 2>/dev/null
+                          cd "$(basename $@ .git)"                                                                            ; }
 
 gc()      { set -x ;      git checkout "$@"                                                         ; { set +x; } 2>/dev/null ; }
 
