@@ -11,7 +11,7 @@ sudo apt install -y zsh-autosuggestions xutils-dev                 # xutils-dev 
 
 #
 cp ~/.config/dotfiles-core/copy/.zshrc ~/
-chsh -s $(which zsh)
+sudo usermod --shell $(which zsh) "$USER"
 
 #
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
