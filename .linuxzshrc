@@ -11,6 +11,7 @@ bindkey '\t\t' autosuggest-accept
 
 #
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 #
 source ~/.config/dotfiles-core/.sharedrc
