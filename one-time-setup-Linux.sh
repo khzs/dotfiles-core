@@ -9,7 +9,7 @@ echo -e "\nsource ~/.config/dotfiles-core/.linuxbashrc" >> ~/.bashrc
 #
 sudo apt install -y zsh-autosuggestions
 cp ~/.config/dotfiles-core/copy/.zshrc ~/
-chsh -s $(which zsh)
+sudo usermod --shell $(which zsh) "$USER"
 
 #
 command -v brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
