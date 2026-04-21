@@ -2,7 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-brew install zsh-autosuggestions
+brew install zsh-autosuggestions fzf zoxide
 
 #
 # echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}" -> .zshrc eleje
