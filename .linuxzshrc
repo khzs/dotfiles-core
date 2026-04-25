@@ -2,6 +2,11 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
+source /etc/zsh/newuser.zshrc.recommended
+HISTSIZE=10000
+SAVEHIST=10000
+
+#
 alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
 
@@ -15,6 +20,7 @@ eval "$(zoxide init zsh --cmd cd)"
 
 #
 source ~/.config/dotfiles-core/.sharedrc
+source ~/.zshrc-local
 
 # this should be at the very very end of .zshrc
 eval "$(starship init bash)" 2>/dev/null
