@@ -9,8 +9,9 @@ sudo apt install -y fzf zoxide
 
 #
 sudo apt install -y zsh-autosuggestions
-cp ~/.config/dotfiles-core/copy/.zshrc ~/
 sudo usermod --shell $(which zsh) "$USER"
+touch ~/.zshrc-local
+ln -s ~/.config/dotfiles-core/.linuxzshrc ~/.zshrc
 
 #
 if ! command -v bcompare > /dev/null; then
