@@ -2,8 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-sed -i '/# for examples/a\\necho "entering $(realpath "${BASH_SOURCE[0]}")"' ~/.bashrc
-echo -e "\nsource ~/.config/dotfiles-core/.linuxbashrc" >> ~/.bashrc
+patch --forward --reject-file=- ~/.bashrc ~/.config/dotfiles-core/copy/bashrc.patch
 
 #
 sudo apt install -y fzf zoxide
