@@ -1,0 +1,17 @@
+--- /etc/skel/.bashrc	2022-01-06 17:23:33.000000000 +0100
++++ /home/zs/.bashrc	2026-04-25 21:14:40.225184539 +0200
+@@ -2,6 +2,8 @@
+ # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+ # for examples
+
++echo "entering $(realpath "${BASH_SOURCE[0]}")"
++
+ # If not running interactively, don't do anything
+ case $- in
+     *i*) ;;
+@@ -115,3 +117,5 @@
+     . /etc/bash_completion
+   fi
+ fi
++
++source ~/.config/dotfiles-core/.linuxbashrc
