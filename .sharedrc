@@ -14,6 +14,27 @@ mkcd()    {               mkdir "$@" && cd "$@"                                 
 dbt()     { set -x ;      docker build -t $(pwd | xargs basename) .                                 ; { set +x; } 2>/dev/null ; }
 
 
+makepatch() {
+  diff -u "copy/${1}.base" "$2" > "${1}.patch"
+  cat "${1}.patch"
+}
+
+applypatch() {
+  cp "copy/${1}.base" "$2"
+  patch "$2" < "${1}.patch"
+  rm "${1}.patch"
+}
+
+
+dotfiles-upgrade() {      cd ~/.config/dotfiles-core
+                          git status
+                          git diff
+                          git pull
+                          source one-time-setup-$(uname).sh
+                          git status
+                          git diff
+                          cd -                                                                                                ; }
+
 
 #
 alias l0='ll ../00*'
