@@ -1,0 +1,11 @@
+{
+  "theme": "dracula",
+  "check_for_updates": false,
+  "editor": {
+    "tab_size": 2
+  },
+  "file_explorer": {
+    "show_hidden": true,
+    "show_gitignored": true
+  }
+}
