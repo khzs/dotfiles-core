@@ -24,6 +24,7 @@ applypatch() {
 
 paths=(
   ~/.gitignore_global
+  ~/.config/fresh/config.json
 )
 
 git status
