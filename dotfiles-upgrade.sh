@@ -25,6 +25,7 @@ applypatch() {
 paths=(
   ~/.gitignore_global
   ~/.config/fresh/config.json
+  ~/.config/ghostty/config.ghostty
 )
 
 git status
