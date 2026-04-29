@@ -14,6 +14,8 @@ mkcd()    {               mkdir "$@" && cd "$@"                                 
 
 dbt()     { set -x ;      docker build -t $(pwd | xargs basename) .                                 ; { set +x; } 2>/dev/null ; }
 
+dotfiles-upgrade()  {     cd ~/.config/dotfiles-core ; source dotfiles-upgrade.sh ; cd -                                      ; }
+
 
 
 #
