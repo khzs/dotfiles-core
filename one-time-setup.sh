@@ -9,7 +9,8 @@ git config --global push.autoSetupRemote true
 # symlink
 lndir ~/.config/dotfiles-core/config-overlay ~/.config
 mkdir -p ~/.config/fresh && touch ~/.config/fresh/config.json
+mkdir -p ~/.config/ghostty && touch ~/.config/ghostty/config.ghostty
 
 #
-uname -r | grep WSL   || brew install --cask font-adwaita-mono-nerd-font      # Mono = basic; Mono ... Mono = smaller icons in yazi
+brew install --cask font-adwaita-mono-nerd-font      # Mono = basic; Mono ... Mono = smaller icons in yazi
 brew install bat micro yazi starship midnight-commander lazygit fresh-editor
