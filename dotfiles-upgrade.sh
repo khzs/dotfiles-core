@@ -23,6 +23,7 @@ applypatch() {
 }
 
 paths=(
+  ~/.gitignore_global
 )
 
 git status

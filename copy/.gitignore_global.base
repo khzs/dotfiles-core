@@ -1,0 +1,8 @@
+.idea/
+.fresh/
+
+.venv/
+__pycache__/
+uv.lock
+
+feladat.txt
