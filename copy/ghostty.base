@@ -1,0 +1,16 @@
+theme = "Dracula+"
+maximize = true
+gtk-tabs-location = hidden
+
+font-family = "AdwaitaMono Nerd Font"
+font-size = 11
+adjust-cell-height = 60%
+
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = true
+
+keybind = ctrl+n=new_window
+keybind = ctrl+shift+o=toggle_tab_overview
+keybind = performable:ctrl+c=copy_to_clipboard
+keybind = performable:ctrl+v=paste_from_clipboard
