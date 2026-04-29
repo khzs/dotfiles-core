@@ -31,10 +31,12 @@ dotfiles-upgrade() {      cd ~/.config/dotfiles-core
                           git diff
                           makepatch fresh ~/.config/fresh/config.json
                           makepatch ghostty ~/.config/ghostty/config.ghostty
+                          makepatch gitignore_global ~/.gitignore_global
                           git pull
                           source one-time-setup-$(uname).sh
                           applypatch fresh ~/.config/fresh/config.json
                           applypatch ghostty ~/.config/ghostty/config.ghostty
+                          applypatch gitignore_global ~/.gitignore_global
                           git status
                           git diff
                           cd -                                                                                                ; }
