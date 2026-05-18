@@ -2,7 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-export PATH=$PATH:~/.local/bin
+export PATH=/usr/bin:/usr/sbin:$PATH:~/.local/bin
 export HOMEBREW_NO_ENV_HINTS=1
 eval "$(zoxide init zsh --cmd cd)"
 
