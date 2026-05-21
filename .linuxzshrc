@@ -9,6 +9,8 @@ SAVEHIST=10000
 #
 alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
+alias pcu='podman-compose up -d'
+alias pcd='podman-compose down'
 
 #
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
