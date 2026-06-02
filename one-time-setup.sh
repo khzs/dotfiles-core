@@ -16,4 +16,8 @@ lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
 brew install --cask font-adwaita-mono-nerd-font      # Mono = basic; Mono ... Mono = smaller icons in yazi
-brew install bat micro yazi starship midnight-commander lazygit fresh-editor
+brew install bat micro yazi starship midnight-commander lazygit fresh-editor pi-coding-agent
+
+pi install npm:context-mode
+pi install npm:pi-web-access
+pi update
