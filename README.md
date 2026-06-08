@@ -13,6 +13,7 @@ For Win11 Terminal:
 ## Scripted steps
 
 ```
-sudo apt install -y curl
-curl -L https://github.com/khzs/dotfiles-core/raw/main/anchor.sh | bash
+sudo apt update && sudo apt install git curl wget gpg lsb-release unzip -y
+git clone https://github.com/khzs/dotfiles-core.git ~/.config/dotfiles-core
+source ~/.config/dotfiles-core/one-time-setup-$(uname).sh
 ```
