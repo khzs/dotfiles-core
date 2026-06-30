@@ -11,4 +11,4 @@ lndir ~/.config/dotfiles-core/config-overlay ~/.config
 
 #
 uname -r | grep WSL   || brew install --cask font-adwaita-mono-nerd-font      # Mono = basic; Mono ... Mono = smaller icons in yazi
-brew install bat micro yazi starship midnight-commander lazygit
+brew install bat micro yazi starship midnight-commander lazygit -y
