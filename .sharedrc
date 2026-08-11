@@ -7,6 +7,21 @@ export HOMEBREW_NO_ENV_HINTS=1
 eval "$(zoxide init zsh --cmd cd)"
 source <(fzf --zsh)
 
+#
+pip3() {
+  print -u2 "zsh: command not found: pip3"
+  return 127
+}
+
+which() {
+  if [[ "$#" -eq 1 && "$1" == pip3 ]]; then
+    print "pip3 not found"
+    return 1
+  fi
+  builtin which "$@"
+}
+
+
 
 #
 alias ..='cd .. ; ll'
