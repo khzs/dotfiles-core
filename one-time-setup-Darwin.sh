@@ -2,7 +2,7 @@
 echo "entering ${BASH_SOURCE[0]:-${(%):-%N}}"
 
 #
-brew install zsh-autosuggestions wget yt-dlp ffmpeg fzf zoxide
+brew install zsh-autosuggestions wget yt-dlp ffmpeg fzf zoxide -y
 ln -s "/Applications/Beyond Compare.app/Contents/MacOS/bcomp" ~/.local/bin/bcompare
 ln -s "/Applications/Zed.app/Contents/MacOS/cli" ~/.local/bin/zed
 
