@@ -37,6 +37,8 @@ dotfiles-upgrade()  {     cd ~/.config/dotfiles-core ; source dotfiles-upgrade.s
 #
 alias l0='ll ../00*'
 
+alias uncommit='git reset --soft HEAD~1 && git restore --staged .'
+
 gcl()     { set -x ;      git clone "$@"                                                            ; { set +x; } 2>/dev/null
                           cd "$(basename $@ .git)"                                                                            ; }
 
