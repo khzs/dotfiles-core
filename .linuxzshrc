@@ -9,7 +9,7 @@ SAVEHIST=10000
 #
 alias ll='ls -alF'
 alias ls='ls --color=auto --group-directories-first'
-alias pcu='podman-compose up -d'
+alias pcu='cd Kelp2 ; podman-compose up -d ; xdg-open "http://localhost:8989/calendar" >/dev/null 2>&1'
 alias pcd='podman-compose down'
 
 #
